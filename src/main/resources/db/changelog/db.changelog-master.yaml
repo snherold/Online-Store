@@ -2,3 +2,32 @@ databaseChangeLog:
   - changeset:
       id: 1
       author: Sam
+      changes:
+        - createTable:
+            tableName: Item
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: description
+                  type: text
+              - column:
+                  name: price
+                  type: decimal(6,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: stock
+                  type: int
+                  constraints:
+                    nullable: false

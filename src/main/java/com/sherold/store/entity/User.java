@@ -1,4 +1,4 @@
-package com.sherold.store.DTO;
+package com.sherold.store.Dto;
 
 public class UserDto {
     private int id;
